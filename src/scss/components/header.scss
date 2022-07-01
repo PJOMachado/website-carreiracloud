@@ -24,11 +24,11 @@ header {
 }
 
 .container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto !important;
+  justify-content: space-between;
   @include lg {
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
   }
 }
 .navbar-collapse {
@@ -104,8 +104,19 @@ header {
   text-transform: capitalize;
 }
 
-.nav {
-  gap: 20px;
+.navbar {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+a.nav-link {
+  padding: 0.6rem 0 !important;
+  @include lg {
+    border-bottom: 3px solid transparent;
+    padding: 1rem 0 !important;
+    width: 80px !important;
+    text-align: center;
+  }
 }
 
 a.nav-link.active {
@@ -113,15 +124,6 @@ a.nav-link.active {
     color: white !important;
     font-weight: 700 !important;
     border-bottom: 3px solid $cian-blue;
-  }
-}
-
-a.nav-link {
-  @include lg {
-    border-bottom: 3px solid transparent;
-    padding: 5px 0 !important;
-    width: 80px !important;
-    text-align: center;
   }
 }
 
@@ -133,91 +135,3 @@ a.nav-link:hover {
     border-bottom: 3px solid $cian-blue;
   }
 }
-
-// a.nav-link::before {
-//   content: '';
-//   position: absolute;
-//   width: 50px;
-//   height: 3px;
-//   top: 2.25rem;
-//   // background-color: $cian-blue;
-//   transform: scale(0, 1);
-//   transition: transform 0.3s ease;
-// }
-
-// a.nav-link:hover::before {
-//   background-color: $cian-blue;
-//   transform: scale(1, 1);
-// }
-
-// nav {
-//   // animation: navTransition 1.5s;
-//   // transform: translateX(200px);
-//   // animation-fill-mode: forwards;
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 30px;
-//   height: 100%;
-
-//   li {
-//     list-style: none;
-//     position: relative;
-//   }
-
-//   a {
-//     text-decoration: none;
-//     color: #fff;
-//     padding: 0.3rem 0;
-//     font-weight: 400;
-//     font-size: 0.95rem;
-//     letter-spacing: 0.2px;
-//     text-transform: capitalize;
-//   }
-
-//   a.active {
-//     // color: $cian-blue;
-//     font-weight: $weight-bold;
-//     border-bottom: 3px solid $cian-blue;
-//   }
-
-//   a::before {
-//     content: '';
-//     position: absolute;
-//     width: 100%;
-//     height: 3px;
-//     top: 1.4rem;
-//     transform: scale(0, 1);
-//     transition: transform 0.3s ease;
-//   }
-
-//   li:hover a::before {
-//     background-color: $cian-blue;
-//     transform: scale(1, 1);
-//   }
-// }
-
-// .socials {
-//   width: 80%;
-//   margin: 0 auto;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end;
-//   border-bottom: 1px solid rgba(47, 235, 235, 0.2);
-//   gap: 20px;
-//   padding: 0.5rem;
-// }
-
-// .social-icon {
-//   color: white;
-//   transition: color 0.3s;
-
-//   animation: iconTransition 1.5s;
-//   transform: translateY(-50px);
-//   animation-fill-mode: forwards;
-// }
-
-// .social-icon:hover {
-//   color: $cian-blue;
-// }
