@@ -6,6 +6,7 @@ header {
   background-color: $dark-blue;
   box-shadow: $default-shadow;
   overflow: hidden;
+  @include flex-center;
 }
 
 .logo {
@@ -15,20 +16,16 @@ header {
 }
 
 .navbar {
+  @include flex-center;
   @include lg {
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    width: 80%;
   }
 }
 
 .container {
   width: 80%;
-  display: flex;
-  margin: 0 auto !important;
-  justify-content: space-between;
   @include lg {
+    width: 70%;
   }
 }
 .navbar-collapse {

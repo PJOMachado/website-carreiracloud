@@ -20,6 +20,14 @@ footer {
   border-top: 1px solid rgba(47, 235, 235, 0.2);
   overflow: hidden;
 
+  @include sm {
+    max-width: 80%;
+  }
+
+  @include lg {
+    max-width: 70%;
+  }
+
   &__text {
     color: #fff;
     font-size: 0.5rem;
@@ -48,23 +56,28 @@ footer {
 
     a:hover {
       color: $cian-blue;
+      transition: 1s;
     }
-  }
-
-  @include lg {
-    width: 90%;
   }
 }
 
 .social {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 1rem !important;
+  padding: 1rem 0 !important;
   overflow: hidden;
+
+  @include sm {
+    max-width: 80%;
+  }
+
+  @include lg {
+    max-width: 70%;
+  }
 
   &__icon {
     color: white;
@@ -78,5 +91,6 @@ footer {
 
   &__icon:hover {
     color: $cian-blue;
+    transition: 1s;
   }
 }
