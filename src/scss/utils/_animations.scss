@@ -1,0 +1,19 @@
+@use './variables' as *;
+
+@keyframes navTransition {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes iconTransition {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoTransition {
+  to {
+    transform: rotate(720deg);
+  }
+}
