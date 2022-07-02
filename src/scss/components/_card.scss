@@ -61,11 +61,15 @@
     animation: rotate 5s linear infinite;
   }
 
+  &:nth-child(2)::before {
+    animation: rotate 5s linear infinite reverse;
+  }
+
   &::after {
     content: '';
     border-radius: 0.5rem;
     position: absolute;
-    inset: 4px;
+    inset: 2px;
     background-color: $light-grey;
   }
 

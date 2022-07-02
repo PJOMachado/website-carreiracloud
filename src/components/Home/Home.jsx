@@ -9,13 +9,13 @@ export default function Home() {
       <div className='container'>
         <div className='container__text'>
           <h1 className='container__text-title'>
-            Conquiste as melhores oportunidades de TI. Acelere a sua carreira
-            através da Cloud.
+            Conquiste as melhores oportunidades de TI Acelere a sua carreira
+            através da Cloud
           </h1>
 
           <p className='container__text-paragraph'>
             Aprenda a conduzir os mais diversos projetos de Cloud, e tenha um
-            dos perfis mais valorizados do mercado.
+            dos perfis mais valorizados do mercado
           </p>
         </div>
         <img src={CloudVector} alt='Cloud' className='container__image' />
