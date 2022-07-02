@@ -1,25 +1,26 @@
 import React from 'react';
-import Card from './Card';
+import Cards from '../Cards/Cards';
+
+import CloudVector from '../../assets/cloud-vector.png';
 
 export default function Home() {
   return (
-    <session className='home' id='home'>
+    <section className='home' id='home'>
       <div className='container'>
-        <h1 className='title'>
-          Conquiste as melhores oportunidades de TI. <br />
-          <span>Acelere a sua carreira através da Cloud.</span>
-        </h1>
+        <div className='container__text'>
+          <h1 className='container__text-title'>
+            Conquiste as melhores oportunidades de TI. Acelere a sua carreira
+            através da Cloud.
+          </h1>
 
-        <p className='paragraph'>
-          Aprenda a conduzir os mais diversos projetos de Cloud, e tenha um dos
-          perfis mais valorizados do mercado.
-        </p>
-        <div className='cards-container'>
-          <Card text={'Quiero evoluir manito'} />
-          <Card text={'Quiero evoluir my business'} />
-          <Card text={'I need mentoria'} />
+          <p className='container__text-paragraph'>
+            Aprenda a conduzir os mais diversos projetos de Cloud, e tenha um
+            dos perfis mais valorizados do mercado.
+          </p>
         </div>
+        <img src={CloudVector} alt='Cloud' className='container__image' />
+        <Cards />
       </div>
-    </session>
+    </section>
   );
 }
