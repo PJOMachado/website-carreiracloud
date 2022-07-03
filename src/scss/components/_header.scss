@@ -10,7 +10,7 @@ header {
 }
 
 .logo {
-  width: 45px;
+  width: 40px;
   animation: logoTransition 3s;
   animation-fill-mode: forwards;
 }
@@ -24,6 +24,7 @@ header {
 
 .container {
   width: 80%;
+  padding: 1rem 0 !important;
   @include lg {
     width: 70%;
   }

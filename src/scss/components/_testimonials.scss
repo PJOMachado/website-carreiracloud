@@ -2,7 +2,11 @@
 
 .testimonials {
   //   @include;
-  padding: 4rem 0 !important;
+  padding: 1rem 0 !important;
+
+  @include lg {
+    padding: 4rem 0 !important;
+  }
 }
 
 .testimonials__container {

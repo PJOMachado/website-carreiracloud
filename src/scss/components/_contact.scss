@@ -2,7 +2,11 @@
 
 .contact__container {
   @include flex-center;
-  padding: 4rem 0 !important;
+  padding: 1rem 0 !important;
+
+  @include lg {
+    padding: 4rem 0 !important;
+  }
 }
 
 .contact__content {

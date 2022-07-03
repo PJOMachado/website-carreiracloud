@@ -35,10 +35,7 @@ export default function Testimonials() {
     <section className='testimonials' id='testimonials'>
       <div className='testimonials__container'>
         <div className='testimonials__content'>
-          <h1 className='testimonials__title'>Clientes sempre percebem</h1>
-          <p className='testimonials__text'>
-            que obtiveram um conteudo excepcional
-          </p>
+          <h1 className='testimonials__title'>Depoimentos</h1>
         </div>
         <Swiper
           modules={[Pagination]}
