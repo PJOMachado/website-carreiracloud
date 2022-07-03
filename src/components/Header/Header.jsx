@@ -14,22 +14,22 @@ export default function Header() {
           <Navbar.Toggle aria-controls='basic-navbar-nav menu-button' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='nav me-auto'>
-              <Nav.Link as={Link} to='/' href='/'>
+              <Nav.Link to='/' href='#home'>
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to='/carreira' href='/carreira'>
+              <Nav.Link to='/carreira' href='#carreira'>
                 Carreira
               </Nav.Link>
-              <Nav.Link as={Link} to='/blog' href='/blog'>
+              <Nav.Link to='/blog' href='#blog'>
                 Blog
               </Nav.Link>
-              <Nav.Link as={Link} to='/sobre' href='/sobre'>
+              <Nav.Link to='/sobre' href='#about'>
                 Sobre
               </Nav.Link>
-              <Nav.Link as={Link} to='/curso' href='/curso'>
+              <Nav.Link to='/curso' href='#curso'>
                 Curso
               </Nav.Link>
-              <Nav.Link as={Link} to='/contato' href='/contato'>
+              <Nav.Link to='/contato' href='#contato'>
                 Contato
               </Nav.Link>
             </Nav>

@@ -5,13 +5,25 @@ export default function Footer() {
   return (
     <footer>
       <div className='social'>
-        <a href='https://www.linkedin.com/' target='_blank'>
+        <a
+          href='https://www.linkedin.com/'
+          target='_blank'
+          className='social__link'
+        >
           <FaLinkedin className='social__icon' size={30} />
         </a>
-        <a href='https://www.instagram.com/' target='_blank'>
+        <a
+          href='https://www.instagram.com/'
+          target='_blank'
+          className='social__link'
+        >
           <FaInstagram className='social__icon' size={30} />
         </a>
-        <a href='https://www.youtube.com/' target='_blank'>
+        <a
+          href='https://www.youtube.com/'
+          target='_blank'
+          className='social__link'
+        >
           <FaYoutube className='social__icon' size={30} />
         </a>
       </div>

@@ -9,8 +9,8 @@ export default function Home() {
       <div className='container'>
         <div className='container__text'>
           <h1 className='container__text-title'>
-            Conquiste as melhores oportunidades de TI Acelere a sua carreira
-            através da Cloud
+            Conquiste as melhores oportunidades de TI
+            <br /> <span>Acelere a sua carreira através da Cloud</span>
           </h1>
 
           <p className='container__text-paragraph'>

@@ -79,17 +79,29 @@ footer {
     max-width: 70%;
   }
 
-  &__icon {
+  &__link {
     color: white;
     transition: color 0.3s;
 
     animation: iconTransition;
     transform: translateY(150px);
     animation-fill-mode: forwards;
+    // animation-duration: 2s;
+  }
+
+  &__link:nth-of-type(1) {
     animation-duration: 2s;
   }
 
-  &__icon:hover {
+  &__link:nth-of-type(2) {
+    animation-duration: 3s;
+  }
+
+  &__link:nth-of-type(3) {
+    animation-duration: 4s;
+  }
+
+  &__link:hover {
     color: $cian-blue;
     transition: 1s;
   }

@@ -26,7 +26,6 @@
   &__text {
     display: flex;
     flex-direction: column;
-    // width: 90%;
     padding: 4rem 0 !important;
     gap: 2rem;
 
@@ -35,22 +34,12 @@
       padding: 4rem 0 !important;
     }
     &-title {
-      text-align: left;
-      font-family: $font-pgh;
-      color: #fff;
-      font-size: 2rem;
-
-      letter-spacing: 0.5px;
-      font-weight: $weight-bold;
-
-      span {
-        font-size: 1.5rem;
-        letter-spacing: 0;
-      }
+      @include title-text;
     }
 
     &-paragraph {
       color: #fff;
+      letter-spacing: 0.7px;
 
       @include lg {
         max-width: 600px;
