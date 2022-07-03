@@ -32,6 +32,7 @@
   &__image {
     display: none;
     @include lg {
+      display: block;
       width: 50%;
       animation: fly 5s linear infinite reverse;
     }
