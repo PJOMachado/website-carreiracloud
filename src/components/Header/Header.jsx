@@ -15,11 +15,11 @@ export default function Header() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='nav me-auto'>
               <Nav.Link href='#home'>Home</Nav.Link>
+              <Nav.Link href='#about'>Sobre</Nav.Link>
+              <Nav.Link href='#course'>Curso</Nav.Link>
               <Nav.Link href='#carreira'>Carreira</Nav.Link>
               <Nav.Link href='#blog'>Blog</Nav.Link>
-              <Nav.Link href='#about'>Sobre</Nav.Link>
-              <Nav.Link href='#curso'>Curso</Nav.Link>
-              <Nav.Link href='#contato'>Contato</Nav.Link>
+              <Nav.Link href='#contact'>Contato</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

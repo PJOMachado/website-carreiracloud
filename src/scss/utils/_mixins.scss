@@ -29,3 +29,20 @@
     margin: 2rem 0 !important;
   }
 }
+
+@mixin button {
+  text-decoration: none;
+  padding: 1rem 2rem !important;
+  color: #fff;
+  background-image: linear-gradient(315deg, $dark-blue 0%, $default-blue 74%);
+  border-radius: 0.6rem;
+
+  letter-spacing: 1.3px;
+  box-shadow: $default-shadow;
+
+  &:hover {
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 700;
+  }
+}

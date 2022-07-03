@@ -1,10 +1,6 @@
 @use '../utils/' as *;
 
-.curso__container {
-  @include flex-center;
-}
-
-.curso {
+.course {
   padding: 4rem 0 !important;
   width: 90%;
   @include flex-center;
@@ -16,37 +12,49 @@
   }
 
   @include lg {
-    display: grid;
-    grid-template:
-      'title video' 1fr
-      'desc video' 3fr
-      / 1fr 1fr;
+    flex-direction: row;
     width: 70%;
-    gap: 0;
+    row-gap: 2rem;
+  }
+
+  &__content {
+    @include flex-center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 2rem;
+    @include lg {
+      padding: 0 !important;
+      max-width: 50%;
+    }
   }
 
   &__title {
-    grid-area: title;
-    width: 100%;
     text-align: left;
     @include title-text;
+
+    @include lg {
+      width: 80%;
+    }
   }
 
   &__paragraph {
     @include pgh-text;
 
     @include lg {
-      max-width: 80%;
+      width: 80%;
     }
   }
 
-  iframe {
-    grid-area: video;
-    box-shadow: $default-shadow;
-    border-radius: 1rem;
+  &__button {
+    @include button;
   }
 
-  //   &__video {
-  //     border-radius: '20x';
-  //   }
+  iframe {
+    box-shadow: $default-shadow;
+    border-radius: 1rem;
+    // @include lg {
+    //   order: 2;
+    // }
+  }
 }

@@ -1,0 +1,63 @@
+@use '../utils/' as *;
+
+.contact__container {
+  @include flex-center;
+  padding: 4rem 0 !important;
+}
+
+.contact__content {
+  @include flex-center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  row-gap: 2rem;
+
+  @include sm {
+    width: 80%;
+  }
+
+  @include lg {
+    width: 70%;
+  }
+}
+
+.contact__form {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.contact {
+  &__title {
+    @include title-text;
+  }
+  &__text {
+    @include pgh-text;
+  }
+}
+
+.form {
+  &__input,
+  &__text {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem !important;
+    border: none;
+    box-shadow: $default-shadow;
+    background-color: $light-grey;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__text {
+    resize: none;
+  }
+
+  &__button {
+    @include button;
+    border: none;
+  }
+}

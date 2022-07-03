@@ -10,7 +10,7 @@ header {
 }
 
 .logo {
-  width: 70px;
+  width: 45px;
   animation: logoTransition 3s;
   animation-fill-mode: forwards;
 }
@@ -28,6 +28,7 @@ header {
     width: 70%;
   }
 }
+
 .navbar-collapse {
   @include lg {
     flex-grow: 0;

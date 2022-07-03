@@ -1,16 +1,19 @@
 @use '../utils/' as *;
 
 .home {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
   overflow: hidden;
-  padding: 4rem 0 !important;
 }
 
-.container {
+.home__container {
+  padding: 4rem 0 !important;
+  width: 90%;
+  @include sm {
+    width: 80%;
+  }
   @include lg {
+    width: 70%;
     display: grid;
     grid-template:
       'container image' 60%
@@ -23,7 +26,7 @@
     justify-content: center;
   }
 
-  &__text {
+  &__content {
     display: flex;
     flex-direction: column;
     padding: 4rem 0 !important;
@@ -33,17 +36,21 @@
       grid-area: container;
       padding: 4rem 0 !important;
     }
-    &-title {
-      @include title-text;
-    }
+  }
+}
 
-    &-paragraph {
-      color: #fff;
-      letter-spacing: 0.7px;
+.home {
+  &__title {
+    @include title-text;
+  }
 
-      @include lg {
-        max-width: 600px;
-      }
+  &__paragraph {
+    color: #fff;
+    letter-spacing: 0.7px;
+    margin-bottom: 2rem !important;
+
+    @include lg {
+      max-width: 600px;
     }
   }
 
@@ -51,15 +58,14 @@
     display: none;
     min-width: 400px;
     right: -100px;
-    top: 50px;
-    z-index: 2;
+    z-index: 99;
 
     @include lg {
-      top: 1px;
+      top: -70px;
       display: block;
       position: absolute;
-      grid-area: image;
       width: 100%;
+      grid-area: image;
       animation: fly 5s linear infinite;
     }
   }

@@ -1,9 +1,5 @@
 @use '../utils/' as *;
 
-.about__container {
-  @include flex-center;
-}
-
 .about {
   padding: 4rem 0 !important;
   width: 90%;
