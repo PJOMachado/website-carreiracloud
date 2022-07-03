@@ -1,0 +1,52 @@
+@use '../utils/' as *;
+
+.curso__container {
+  @include flex-center;
+}
+
+.curso {
+  padding: 4rem 0 !important;
+  width: 90%;
+  @include flex-center;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include sm {
+    width: 80%;
+  }
+
+  @include lg {
+    display: grid;
+    grid-template:
+      'title video' 1fr
+      'desc video' 3fr
+      / 1fr 1fr;
+    width: 70%;
+    gap: 0;
+  }
+
+  &__title {
+    grid-area: title;
+    width: 100%;
+    text-align: left;
+    @include title-text;
+  }
+
+  &__paragraph {
+    @include pgh-text;
+
+    @include lg {
+      max-width: 80%;
+    }
+  }
+
+  iframe {
+    grid-area: video;
+    box-shadow: $default-shadow;
+    border-radius: 1rem;
+  }
+
+  //   &__video {
+  //     border-radius: '20x';
+  //   }
+}

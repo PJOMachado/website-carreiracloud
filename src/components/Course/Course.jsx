@@ -25,17 +25,6 @@ export default function Course() {
           com uma demanda altíssima de profissionais, o Google Cloud Platform
           (GCP).
         </p>
-        {/* <p className='curso__paragraph'>
-          A nossa missão é mudar a vida das pessoas através da
-          profissionalização em Cloud Computing.
-          <span>
-            Acreditamos que a fórmula perfeita para que cada um acelere o seu
-            desenvolvimento profissional em Cloud é juntando conhecimento
-            teórico com experiências práticas. Com isso em vista, produzimos
-            conteúdo gratuito de alta qualidade e oferecemos soluções para que
-            você se desenvolva cada vez mais.
-          </span>
-        </p> */}
       </div>
     </section>
   );
