@@ -48,10 +48,11 @@
   &__paragraph {
     color: #fff;
     letter-spacing: 0.7px;
-    margin-bottom: 2rem !important;
+    margin: 2rem 0 !important;
 
     @include lg {
-      max-width: 600px;
+      text-align: justify;
+      max-width: 500px;
     }
   }
 

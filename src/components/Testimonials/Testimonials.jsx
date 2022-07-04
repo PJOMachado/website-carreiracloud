@@ -39,7 +39,7 @@ export default function Testimonials() {
         </div>
         <Swiper
           modules={[Pagination]}
-          slidesPerView={'3'}
+          slidesPerView={'2'}
           pagination={{ clickable: true }}
         >
           {clients.map((client, index) => {
