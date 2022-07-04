@@ -3,7 +3,9 @@
 
 header {
   max-width: 100vw;
-  background-color: $dark-blue;
+  background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+  // background-color: $dark-blue;
   box-shadow: $default-shadow;
   overflow: hidden;
   @include flex-center;
