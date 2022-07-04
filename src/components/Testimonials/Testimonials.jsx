@@ -42,8 +42,17 @@ export default function Testimonials() {
         </div>
         <Swiper
           modules={[Pagination]}
-          slidesPerView={'2'}
           pagination={{ clickable: true }}
+          breakpoints={{
+            375: {
+              width: 375,
+              slidesPerView: 1,
+            },
+            1024: {
+              width: 1024,
+              slidesPerView: 2,
+            },
+          }}
         >
           {clients.map((client, index) => {
             return (
