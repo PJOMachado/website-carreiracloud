@@ -1,7 +1,7 @@
 @use '../utils/' as *;
 
 .about {
-  padding: 1rem 0 !important;
+  padding: 2rem 0 !important;
   width: 90%;
   @include flex-center;
   flex-direction: column;

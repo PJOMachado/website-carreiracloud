@@ -2,7 +2,7 @@
 
 .testimonials {
   //   @include;
-  padding: 1rem 0 !important;
+  padding: 2rem 0 !important;
 
   @include lg {
     padding: 4rem 0 !important;
@@ -34,9 +34,7 @@
   }
 
   &__image {
-    border: 3px solid $cian-blue;
-    background-color: $default-blue;
-    padding: 5px !important;
+    border: 2px solid $default-blue;
     border-radius: 50%;
     width: 70px;
   }
@@ -44,12 +42,13 @@
   &__testimonial {
     font-size: 0.8rem;
     text-align: justify;
+    max-width: 90%;
   }
 
   &__card {
     @include flex-center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     background-color: $light-grey;
     border-radius: 0.5rem;
     margin: 0 0.3rem !important;

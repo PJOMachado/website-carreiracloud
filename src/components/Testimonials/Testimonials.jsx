@@ -5,27 +5,30 @@ import { Pagination } from 'swiper';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
-import img from '../../assets/logo.png';
+import yago from '../../assets/yago.jfif';
+import dan from '../../assets/daniel.jfif';
+import gabriel from '../../assets/gabriel.jfif';
+import jorge from '../../assets/jorge.jfif';
 
 export default function Testimonials() {
   const clients = [
     {
-      img: img,
+      img: yago,
       review:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus incidunt saepe est. Commodi totam autem et, reprehenderit cum in molestiae hic, quisquam dolorem velit dolor amet, ipsa quo. Dolores. ',
     },
     {
-      img: img,
+      img: dan,
       review:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus incidunt saepe est. Commodi totam autem et, reprehenderit cum in molestiae hic, quisquam dolorem velit dolor amet, ipsa quo. Dolores. ',
     },
     {
-      img: img,
+      img: gabriel,
       review:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus incidunt saepe est. Commodi totam autem et, reprehenderit cum in molestiae hic, quisquam dolorem velit dolor amet, ipsa quo. Dolores. ',
     },
     {
-      img: img,
+      img: jorge,
       review:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus incidunt saepe est. Commodi totam autem et, reprehenderit cum in molestiae hic, quisquam dolorem velit dolor amet, ipsa quo. Dolores. ',
     },

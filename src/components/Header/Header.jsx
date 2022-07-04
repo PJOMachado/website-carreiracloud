@@ -11,7 +11,10 @@ export default function Header() {
           <Navbar.Brand href='/'>
             <img src={Logo} alt='logo' className='logo' />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='basic-navbar-nav menu-button' />
+          <Navbar.Toggle
+            aria-controls='basic-navbar-nav menu-button'
+            className='background-color: #e3f2fd;'
+          />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='nav me-auto'>
               <Nav.Link href='#home'>Home</Nav.Link>
