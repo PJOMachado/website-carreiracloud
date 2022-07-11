@@ -10,8 +10,7 @@ export default function About() {
         <div className='about__content'>
           <h1 className='about__title'>Sobre</h1>
           <p className='about__paragraph'>
-            A nossa missão é mudar a vida das pessoas através da
-            profissionalização em Cloud Computing.
+            A nossa missão é vaaaaaaaaaaaaaaaaaaaaca.
             <span>
               Acreditamos que a fórmula perfeita para que cada um acelere o seu
               desenvolvimento profissional em Cloud é juntando conhecimento
