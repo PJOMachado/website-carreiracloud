@@ -14,7 +14,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-RUN cat /usr/src/app/website-carreiracloud/src/components/About/About.jsx
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
