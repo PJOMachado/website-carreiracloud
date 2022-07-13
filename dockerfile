@@ -8,8 +8,6 @@ WORKDIR /usr/src/app/
 # where available (npm@5+)
 COPY package*.json /usr/src/app/
 
-RUN cat /usr/src/app/website-carreiracloud/src/components/About/About.jsx
-
 RUN npm install
 # Bundle app source
 COPY . .
