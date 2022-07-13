@@ -3,13 +3,18 @@ steps:
     id: 'Build Docker Image'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/github.com/pjomachado/website-carreiracloud:$SHORT_SHA', '.']
 
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'Push Docker Image'
+    args: ['push', 'gcr.io/$PROJECT_ID/github.com/pjomachado/website-carreiracloud:$SHORT_SHA']
+
+
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: 'Deploy Image on Cloud Run'
     entrypoint: bash 
     args: 
       - -c
       - |
-        gcloud run deploy website-carreiracloud --image=gcr.io/ccloud-web-prd/github.com/pjomachado/website-carreiracloud:$COMMIT_SHA
+        gcloud run deploy website-carreiracloud --image=gcr.io/ccloud-web-prd/github.com/pjomachado/website-carreiracloud:$COMMIT_SHA --region=us-east1
 
 images: ['gcr.io/$PROJECT_ID/github.com/pjomachado/website-carreiracloud:$SHORT_SHA']
 
