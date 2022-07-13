@@ -14,7 +14,7 @@ steps:
     args: 
       - -c
       - |
-        gcloud run deploy website-carreiracloud --image=gcr.io/ccloud-web-prd/github.com/pjomachado/website-carreiracloud:$COMMIT_SHA --region=us-east1
+        gcloud run deploy website-carreiracloud --image=gcr.io/ccloud-web-prd/github.com/pjomachado/website-carreiracloud:$SHORT_SHA --region=us-east1
 
 images: ['gcr.io/$PROJECT_ID/github.com/pjomachado/website-carreiracloud:$SHORT_SHA']
 
