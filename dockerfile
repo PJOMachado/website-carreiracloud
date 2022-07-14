@@ -10,8 +10,8 @@ COPY next.config.js ./next.config.js
 COPY public ./public
 COPY src ./src
 
-EXPOSE 8080
+EXPOSE 3000
 
-ENV PORT 8080
+ENV PORT 3000
 
 CMD ["yarn", "prod"]
