@@ -32,12 +32,25 @@
 
 @keyframes fly {
   0% {
-    transform: translateY(0);
+    transform: translateY(10);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   100% {
+    transform: translateY(10);
+  }
+}
+
+@keyframes mobile {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes desktop {
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
 }

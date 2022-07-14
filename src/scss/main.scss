@@ -1,23 +1,56 @@
 //modules
 @use './utils' as *;
-@use './components' as *;
 
 * {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
-  font-family: $font-pgh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  // background-color: #0beef9;
-  // background-image: linear-gradient(315deg, $cian-blue 0%, $default-blue 74%);
-  // background-color: #0beef9;
-  // background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  background-color: $ltgray;
+  color: $dkblue;
+  min-height: calc(100vh);
 }
 
-section {
-  @include flex-center;
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem;
+}
+
+
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 2.5rem;
+  align-self: flex-start;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
 }

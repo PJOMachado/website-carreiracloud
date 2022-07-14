@@ -1,0 +1,45 @@
+@use '../../../scss/utils/' as *;
+
+.about__section {
+  @include flex-center;
+  min-height: 100vh;
+  padding: 4rem 0;
+
+  .about__container {
+    @include width;
+    @include flex-center;
+    flex-direction: column;
+    column-gap: 2rem;
+
+    @include md {
+      flex-direction: row;
+    }
+
+    img {
+      animation: fly 3s linear infinite reverse;
+      max-width: 200px;
+
+      @include sm {
+        max-width: 300px;
+      }
+      @include lg {
+        max-width: 450px;
+      }
+      @include xl {
+        max-width: 600px;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-top: 1.5rem;
+      text-align: justify;
+
+      span {
+        color: $cian;
+        font-weight: bold;
+      }
+    }
+  }
+}
