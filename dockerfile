@@ -5,11 +5,11 @@ FROM node:16-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile 
+#RUN yarn install --frozen-lockfile 
 
 # If using npm with a `package-lock.json` comment out above and use below instead
-# COPY package.json package-lock.json ./ 
-# RUN npm ci
+ COPY package.json package-lock.json ./ 
+ RUN npm ci
 
 # Rebuild the source code only when needed
 FROM node:16-alpine AS builder
@@ -22,10 +22,10 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN yarn build
+# RUN yarn build
 
 # If using npm comment out above and use below instead
-# RUN npm run build
+ RUN npm run build
 
 # Production image, copy all the files and run next
 FROM node:16-alpine AS runner
@@ -54,4 +54,4 @@ EXPOSE 8080
 
 ENV PORT 8080
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
