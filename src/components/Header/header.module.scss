@@ -51,13 +51,22 @@
     }
 
     @include md {
+      padding: 0;
+
       @include width;
+      .show {
+        width: auto;
+        padding: 0;
+      }
+
       .show,
       .hide {
+        font-weight: 400;
         position: static;
         display: flex;
         flex-direction: row;
         height: 5rem;
+        align-items: center;
 
         a {
           display: inline-block;
@@ -66,7 +75,7 @@
           height: 5rem;
           line-height: 5rem;
 
-          transition: all 0.3s;
+          transition: color 0.3s;
 
           &:hover {
             color: $cian;
@@ -77,7 +86,8 @@
             font-weight: 700;
           }
 
-          &.active::after {
+          &.active::after,
+          &:hover::after {
             position: absolute;
             content: '';
             height: 3px;

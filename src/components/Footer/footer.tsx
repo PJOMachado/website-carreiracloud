@@ -13,37 +13,34 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.social} ref={ref}>
         <a
-          href='https://www.linkedin.com/'
+          href='https://www.linkedin.com/company/carreira-cloud/about'
           target='_blank'
           style={{
             transform: isInView ? 'none' : 'translateY(150px)',
             opacity: isInView ? 1 : 0,
-            transition:
-              'opacity 0.9s cubic-bezier(0.17, 0.55, 0.55, 1), transform 1.2s',
+            transition: 'opacity 0.9s, transform 1.2s',
           }}
         >
           <FaLinkedin size={30} />
         </a>
         <a
-          href='https://www.instagram.com/'
+          href='https://instagram.com/carreira.cloud?igshid=YmMyMTA2M2Y='
           target='_blank'
           style={{
             transform: isInView ? 'none' : 'translateY(150px)',
             opacity: isInView ? 1 : 0,
-            transition:
-              'opacity 0.9s cubic-bezier(0.17, 0.55, 0.55, 1), transform 0.8s',
+            transition: 'opacity 0.9s, transform 0.8s',
           }}
         >
           <FaInstagram size={30} />
         </a>
         <a
-          href='https://www.youtube.com/'
+          href='https://www.youtube.com/channel/UCRLmUjn7XB61EYUNX-e5X8w'
           target='_blank'
           style={{
             transform: isInView ? 'none' : 'translateY(150px)',
             opacity: isInView ? 1 : 0,
-            transition:
-              'opacity 0.9s cubic-bezier(0.17, 0.55, 0.55, 1), transform 0.4s',
+            transition: 'opacity 0.9s, transform 0.4s',
           }}
         >
           <FaYoutube size={30} />

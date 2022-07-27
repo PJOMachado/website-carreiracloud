@@ -33,17 +33,22 @@
 
 @mixin button {
   height: 3rem;
-  border-radius: 3rem;
-  background-color: $gray;
+  background-color: $gray2;
   color: #737380;
   border: 0;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   font-weight: bold;
+
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -khtml-border-radius: 0.5rem;
 
   &:hover {
     background-color: $blue;
